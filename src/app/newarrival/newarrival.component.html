@@ -1,0 +1,46 @@
+<main>
+    <!-- <ScrollToTop /> -->
+    <!-- <Nav /><br /><br /> -->
+    <section class="pt-10 pb-10 " >
+
+        <div class=' absolute boder-2 p-4 ' id='sideBar' >
+            <app-sidebar></app-sidebar>
+        </div>
+
+        <div class='' id="prod-container">
+            <div id='titlebox' class='li:p-1'>
+                <h2 class='p-4 text-left text-5xl font-bold sm:text-3xl sm:text-center sm:font-medium'>Newarrival </h2>
+                <p class='text-sm text-lighter pl-2 sm:text-xs capitalize'> It all new . Browse our versatile selection and choose from a range of styles and washes that are
+                    perfect for you . we have all the standout, on-trend and inexpensive styles you're looking for.
+                    Browse our Newarrival collection below and find your new favorite pairs.</p>
+                <div class='flex shrink gap-4 pt-2 pb-2'>
+                    <span class='font-bold p-2 cursor-pointer sm:text-sm'> Shop Now  </span>
+                </div>
+            </div>
+
+
+            <ul class='pl-2 grid grid-cols-4 3xl:grid-cols-4  gap-0 lg:grid-cols-4 Llg:grid-cols-4 gi:grid-cols-3 sxs:grid-cols-2 sxs:gap-0 li:grid-cols-1 li:p-2 li:grid-cols-0 li:w-4/5 li:mx-auto li:my-auto ' >
+
+                <div [routerLink]="['/product/details/', NewArrival?.id]" *ngFor="let NewArrival  of NewArrivals" data-aos="zoom-in">
+                    <div class="proCard">
+                        <div class="imgHolder">
+                                <img src={{NewArrival?.image1}}
+                                    alt='/' />
+                        </div>
+                        <div class="info">
+                            <h4 class="title truncate">{{NewArrival?.name}}</h4>
+                            <div class="price">N {{NewArrival?.price}}</div>
+                        </div>
+                    </div>
+                </div>
+
+            </ul><br /><br />
+        </div>
+
+    </section>
+
+    <section class='pt-10 '>
+        <!-- <Footer /> -->
+    </section>
+
+</main>
