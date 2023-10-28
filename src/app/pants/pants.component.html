@@ -1,9 +1,8 @@
 <main>
-    <!-- <ScrollToTop /> -->
-    <!-- <Nav /><br /><br /> -->
-    <section class="pt-10 pb-10 " >
+    <app-navbar></app-navbar>
+    <section class="pt-10 pb-10 block mx-auto my-auto " >
 
-        <div class=' absolute boder-2 p-4 ' id='sideBar' >
+        <div class=' absolute boder-2 p-4 lg:hidden' id='sideBar' >
             <app-sidebar></app-sidebar>
         </div>
 
@@ -28,8 +27,8 @@
                                     alt='/' />
                         </div>
                         <div class="info">
-                            <h4 class="title truncate">{{Pants?.name}}</h4>
-                            <div class="price">N {{Pants?.price}}</div>
+                            <h4 class="title truncate text-md text-lighter ">{{Pants?.name}}</h4>
+                            <div class="price font-bold text-2xl ">N {{Pants?.price}}</div>
                         </div>
                     </div>
                 </div> 
@@ -40,7 +39,7 @@
     </section>
 
     <section class='pt-10 '>
-        <!-- <Footer /> -->
+        <app-footer></app-footer>
     </section>
 
 </main>

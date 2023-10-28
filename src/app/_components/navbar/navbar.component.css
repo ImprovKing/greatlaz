@@ -28,7 +28,7 @@ body{
     height: 100vh !important;
     position: fixed;
     right: 0;
-    width: 80%;
+    width: 40%;
     z-index: 99;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -94,6 +94,7 @@ input[type=checkbox] {
     left: 22px;
     border-radius : 10px ;
 }
+
 .sidebarIconToggle{
     position: fixed;
 }
@@ -202,6 +203,7 @@ input[type=search]{
     .header{
         height : 55px !important ;
     }
+
 }
 @media screen and (max-width : 1180px) {
     .header{
@@ -217,6 +219,7 @@ input[type=search]{
     #sidebarMenu{
         font-size: normal ;
         height: 100vh;
+        width: 80% !important ;
     }
     .search-box{
         margin-top : 10px;

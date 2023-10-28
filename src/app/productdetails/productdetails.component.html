@@ -1,6 +1,6 @@
-<app-navbar></app-navbar>
 <main>
-  <div class="details">
+  <app-navbar></app-navbar>
+  <div class="details pt-10 ">
     <div>
     </div>
     <div class="det-main-cont grid grid-cols-2 gap-6 sm:grid-cols-1 relative">
@@ -8,11 +8,11 @@
         <img src={{Products?.image1}} alt='/' />
       </div>
       <div class="det-info">
-        <h3 class="det-title ">
+        <span class="text-base text-lighter bg-green-600 p-2 rounded text-white"> {{Products?.SKU}} </span><br /><br />
+        <h3 class="det-title font-bold text-3xl ">
           {{Products?.name}}
         </h3>
         <h5 class="detprice"> <b class="text-green-600" > N </b> {{Products?.price}} </h5>
-        <span class="font-bold text-lighter text-white"> {{Products?.SKU}} </span>
         <h6 class="text-base text-red-300 "> few units left </h6>
         <br />
         <span class="btn-prod">

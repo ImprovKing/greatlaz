@@ -1,9 +1,8 @@
 <main>
-    <!-- <ScrollToTop /> -->
-    <!-- <Nav /><br /><br /> -->
-    <section class="pt-10 pb-10 " >
+<app-navbar></app-navbar>
+    <section class="pt-10 pb-10 block mx-auto my-auto " >
 
-        <div class=' absolute boder-2 p-4 ' id='sideBar' >
+        <div class=' absolute boder-2 p-4 ip:hidden' id='sideBar' >
             <app-sidebar></app-sidebar>
         </div>
 
@@ -19,7 +18,7 @@
             </div>
 
 
-            <ul class='pl-2 grid grid-cols-4 3xl:grid-cols-4  gap-0 lg:grid-cols-4 Llg:grid-cols-4 gi:grid-cols-3 sxs:grid-cols-2 sxs:gap-0 li:grid-cols-1 li:p-2 li:grid-cols-0 li:w-4/5 li:mx-auto li:my-auto ' >
+            <ul class='pl-2 grid grid-cols-4 3xl:grid-cols-4  gap-0 lg:grid-cols-3 sxs:grid-cols-2 sxs:gap-0 li:grid-cols-1 li:p-2 li:grid-cols-0 li:w-4/5 li:mx-auto li:my-auto ' >
 
                 <div [routerLink]="['/product/details/', Shirt?.id]" *ngFor="let Shirt of Shirt" data-aos="zoom-in">
                     <div class="proCard">
@@ -28,8 +27,8 @@
                                     alt='/' />
                         </div>
                         <div class="info">
-                            <h4 class="title truncate">{{Shirt?.name}}</h4>
-                            <div class="price">N {{Shirt?.price}}</div>
+                            <h4 class="title truncate text-md text-lighter ">{{Shirt?.name}}</h4>
+                            <div class="price font-bold text-2xl ">N {{Shirt?.price}}</div>
                         </div>
                     </div>
                 </div>
@@ -40,7 +39,7 @@
     </section>
 
     <section class='pt-10 '>
-        <!-- <Footer /> -->
+        <app-footer></app-footer>
     </section>
 
 </main>
