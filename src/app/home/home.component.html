@@ -12,49 +12,64 @@
                 <div class="images-inner">
                     <div class="image-slide relative">
                         <img id="head-img"
-                            src="https://images.unsplash.com/photo-1508243771214-6e95d137426b?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsYWNrJTIwbWVuJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D"
+                            src="https://images.unsplash.com/photo-1596940872506-6d16d1b06fb0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGJsYWNrJTIwbWVufGVufDB8fDB8fHww"
                             alt="/" />
-
-                            <div class="absolute right-10 bottom-10 text-white text-3xl ">
-                                Shop GREAT LAZ
-                            </div>
                     </div>
                     <div class="image-slide relative">
                         <img id="head-img"
                             src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=600"
                             alt="/" />
-
-                            <div class="absolute right-10 bottom-10 text-white font-bold text-3xl border-2 p-10 border-white rounded-xl">
-                                Get cool wears 
-                            </div>
                     </div>
                     <div class="image-slide relative">
                         <img id="head-img"
-                            src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            src="https://images.unsplash.com/photo-1628749528992-f5702133b686?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJsYWNrJTIwbWVufGVufDB8fDB8fHww"
                             alt="/" />
                     </div>
                 </div>
             </div>
         </div>
     </div><br /><br /><br />
+
+    <section class="mt-10 ">
+        <h2 class="p-5 block font-bold text-2xl "> Shop By Category </h2>
+
+        <div class="w-4/5 block mx-auto my-auto sm:w-full">
+            <div class=" grid grid-cols-2 catCon w-4/5 mx-auto my-auto block sm:w-full ">
+                
+                <div class="cacon"  routerLink='/shirts/category/section/products/shirts'>
+                    <img src="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNoaXJ0fGVufDB8fDB8fHww" alt='/' />
+                </div>
+                <div class="cacon"  routerLink='/pants/category/section/products/pants'>
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8UGFudHN8ZW58MHx8MHx8fDA%3D" alt='/' />
+                </div>
+                <div class="cacon"  routerLink='/jerseys/category/section/products/jerseys'>
+                    <img src="https://images.unsplash.com/photo-1580149959218-3002c427a6dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8SmVyc2V5c3xlbnwwfHwwfHx8MA%3D%3D" alt='/' />
+                </div>
+                 <div class="cacon"  routerLink='/footwears/category/section/products/footwears'>
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U25lYWtlcnN8ZW58MHx8MHx8fDA%3D" alt='/' />
+                </div>
+
+            </div>    
+        </div> 
+    </section>
     
 
 
     <div class="p-6 mt-10 mb-10 relative"  >
-        <h4 class=""> New Arrivals </h4><br />
+        <h4 class="font-bold text-2xl"> Jerseys </h4><br />
 
         <span class="absolute right-10 top-5 text-base" routerLink='/newarrival/category/section/products/newarrival' > view all &rarr; </span>
 
         <div class="slides" >
-            <div [routerLink]="['/product/details/', NewArrival?.id]" *ngFor="let NewArrival  of NewArrivals" data-aos="zoom-in">
+            <div [routerLink]="['/product/details/', Jersey?.id]" *ngFor="let Jersey of Jersey" data-aos="zoom-in">
                 <div class="proCard">
                     <div class="imgHolder">
-                            <img src={{NewArrival?.image1}}
+                            <img src={{Jersey?.image1}}
                                 alt='/' />
                     </div>
                     <div class="info">
-                        <h4 class="title truncate text-md text-lighter ">{{NewArrival?.name}}</h4>
-                        <div class="price font-bold text-2xl ">N {{NewArrival?.price}}</div>
+                        <h4 class="title truncate text-md text-lighter ">{{Jersey?.name}}</h4>
+                        <div class="price font-bold text-2xl ">N {{Jersey?.price}}</div>
                     </div>
                 </div>
             </div>
@@ -63,7 +78,7 @@
     </div>
 
         <div class="p-6 mb-10 relative">
-            <h4 class=""> Shirts </h4><br />
+            <h4 class="font-bold text-2xl"> Shirts </h4><br />
 
             <span class="absolute right-10 top-5 text-base" routerLink='/shirts/category/section/products/shirts'> view all &rarr; </span>
 
@@ -85,7 +100,7 @@
         </div>    
 
     <div class="p-6 mb-10 relative">
-        <h4 class=""> Pants </h4><br />
+        <h4 class="font-bold text-2xl"> Pants </h4><br />
 
         <span class="absolute right-10 top-5 text-base " routerLink='/pants/category/section/products/pants'> view all &rarr; </span>
 
@@ -109,28 +124,43 @@
 </div>
 
 <div class="p-6 mb-10 relative">
-    <h4 class=""> Others </h4><br />
+    <h4 class="font-bold text-2xl"> Footwears  </h4><br />
 
     <span class="absolute right-10 top-5 text-base" routerLink='/others/category/section/products/others'> view all &rarr; </span>
 
 
     <div class="slides">
-        <div [routerLink]="['/product/details/', Others?.id]" *ngFor="let Others of Others" data-aos="zoom-in">
+        <div [routerLink]="['/product/details/', Footwear?.id]" *ngFor="let Footwear of Footwear" data-aos="zoom-in">
             <div class="proCard">
                 <div class="imgHolder">
-                        <img src={{Others?.image1}}
+                        <img src={{Footwear?.image1}}
                             alt='/' />
                 </div>
                 <div class="info">
-                    <h4 class="title truncate text-md text-lighter ">{{Others?.name}}</h4>
-                    <div class="price font-bold text-2xl ">N {{Others?.price}}</div>
+                    <h4 class="title truncate text-md text-lighter ">{{Footwear?.name}}</h4>
+                    <div class="price font-bold text-2xl ">N {{Footwear?.price}}</div>
                 </div>
             </div>
         </div>         
     </div>
 
+    <div class="text-center mb-20 mt-20 p-4">
+        <h4 class="font-bold text-xl text-center"> 
+            GREAT LAZ makes online shopping in Nigeria simple and convenient.
+        </h4>
+    
+    We provide a diverse choice of trustworthy items. Participate in the daily offers and get the most affordable prices on a wide selection of items.
+    
+    We are an online store where you can get all of your fashion items, Sneakers, as well as Pants, items for men, women, and children; cool gadgets, computers, beauty products, powerbanks, and more on the move. What else is there?
+    </div>
 
-</div>
-   
+
+</div>  
+
+
+
+
+
+
 <app-footer></app-footer>
 </main>

@@ -22,14 +22,14 @@ export class HomeComponent implements OnInit {
  items: Product[] | undefined;
 
  shirts  = 'shirts';
+ jersey  = 'jersey';
  pants = 'pants' ;
- newarrival  = 'newarrivals' ;
- others = 'others' ;
+ footwear  = 'Footwears' ;
 
  Shirt : any = this.getProductShirtCategory() ;
  Pants : any = this.getProductPantsCategory() ;
- NewArrivals : any = this.getProductNewarrivalCategory() ;
- Others : any = this.getProductOthersCategory() ;
+ Jersey : any = this.getProductJerseyCategory() ;
+ Footwear : any = this.getProductsFootwearCategory() ;
  
  constructor(){}
 
@@ -48,15 +48,15 @@ export class HomeComponent implements OnInit {
  )
  }
 
- getProductNewarrivalCategory ( ){
+ getProductJerseyCategory ( ){
    return getProducts().filter(
-     (Products) => Products.category === this.newarrival
+     (Products) => Products.category === this.jersey
  )
  }
 
- getProductOthersCategory ( ){
+ getProductsFootwearCategory ( ){
    return getProducts().filter(
-     (Products) => Products.category === this.others
+     (Products) => Products.category === this.footwear
  )
  }
  

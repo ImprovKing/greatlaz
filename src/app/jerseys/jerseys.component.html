@@ -2,14 +2,10 @@
     <app-navbar></app-navbar>
     <section class="pt-10 pb-10 block mx-auto my-auto " >
 
-        <div class=' absolute boder-2 p-4 lg:hidden' id='sideBar' >
-            <app-sidebar></app-sidebar>
-        </div>
-
         <div class='' id="prod-container">
             <div id='titlebox' class='li:p-1'>
-                <h2 class='p-4 text-left text-5xl font-bold sm:text-3xl sm:text-center sm:font-medium'>Others </h2>
-                <p class='text-sm text-lighter pl-2 sm:text-xs capitalize'> It all Mixed . Browse our versatile selection and choose from a range of styles and washes that are
+                <h2 class='p-4 text-left text-5xl font-bold sm:text-3xl sm:text-center sm:font-medium'>Jerseys </h2>
+                <p class='text-sm text-lighter pl-2 sm:text-xs capitalize'> It all about Jerseys . Browse our versatile selection and choose from a range of styles and washes that are
                     perfect for you . we have all the standout, on-trend and inexpensive styles you're looking for.
                     Browse our Newarrival collection below and find your new favorite pairs.</p>
                 <div class='flex shrink gap-4 pt-2 pb-2'>
@@ -20,18 +16,18 @@
 
             <ul class='pl-2 grid grid-cols-4 3xl:grid-cols-4  gap-0 lg:grid-cols-4 Llg:grid-cols-4 gi:grid-cols-3 sxs:grid-cols-2 sxs:gap-0 li:grid-cols-1 li:p-2 li:grid-cols-0 li:w-4/5 li:mx-auto li:my-auto ' >
 
-                <div [routerLink]="['/product/details/', Others?.id]" *ngFor="let Others of Others" data-aos="zoom-in">
+                <div [routerLink]="['/product/details/', Jersey?.id]" *ngFor="let Jersey of Jersey" data-aos="zoom-in">
                     <div class="proCard">
                         <div class="imgHolder">
-                                <img src={{Others?.image1}}
+                                <img src={{Jersey?.image1}}
                                     alt='/' />
                         </div>
                         <div class="info">
-                            <h4 class="title truncate text-md text-lighter ">{{Others?.name}}</h4>
-                            <div class="price font-bold text-2xl ">N {{Others?.price}}</div>
+                            <h4 class="title truncate text-md text-lighter ">{{Jersey?.name}}</h4>
+                            <div class="price font-bold text-2xl ">N {{Jersey?.price}}</div>
                         </div>
                     </div>
-                </div>  
+                </div>
 
             </ul><br /><br />
         </div>

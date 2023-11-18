@@ -17,7 +17,7 @@ interface Product{
 export class ProductdetailsComponent implements OnInit {
 
   Products : Product | undefined ;
-  others = 'others' ;
+  others = 'Footwears' ;
 
   Others : any = this.getProductOthersCategory() ;
   //dimensions 
@@ -45,8 +45,25 @@ export class ProductdetailsComponent implements OnInit {
 
   getProductOthersCategory ( ){
     return getProducts().filter(
-      (Products) => Products.category === this.others
+      (Products) => Products.category === this.others 
+      
   )
   }
+
+        // Function to share on whatsapp 
+        share() { 
+  
+          // Getting user input 
+          // var message = $("input[name=message]").val(); 
+
+          // Opening URL 
+          window.open( 
+              "whatsapp://send?text=" , 
+
+              // This is what makes it  
+              // open in a new window. 
+              '_blank'  
+          ); 
+      } 
 
 }

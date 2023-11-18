@@ -211,6 +211,17 @@ input[type=radio]{
     padding: 10px ;
     font-size: large;
   }
+  .whatsaapbn{
+    display : block ;
+    margin : 10px auto 10px auto ;
+    width : 70% ;
+    text-align: center;
+    font-size: large ;
+    color : green ;
+    border : 1px solid green ;
+    padding : 10px ;
+    border-radius : 5px ;
+  }
 @media screen and (max-width : 1024px){
     body{
         max-width : 1024px ;

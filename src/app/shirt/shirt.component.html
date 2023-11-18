@@ -2,23 +2,19 @@
 <app-navbar></app-navbar>
     <section class="pt-10 pb-10 block mx-auto my-auto " >
 
-        <div class=' absolute boder-2 p-4 ip:hidden' id='sideBar' >
-            <app-sidebar></app-sidebar>
-        </div>
-
         <div class='' id="prod-container">
             <div id='titlebox' class='li:p-1'>
                 <h2 class='p-4 text-left text-5xl font-bold sm:text-3xl sm:text-center sm:font-medium'> Shirts </h2>
-                <p class='text-sm text-lighter pl-2 sm:text-xs capitalize'> It all about Shirts . Browse our versatile selection and choose from a range of styles and washes that are
+                <p class='text-sm text-lighter pl-2 sm:text-xs capitalize'> It all about shirts . Browse our versatile selection and choose from a range of styles and washes that are
                     perfect for you . we have all the standout, on-trend and inexpensive styles you're looking for.
-                    Browse our Newarrival collection below and find your new favorite pairs.</p>
+                    Browse our shirts collection below and find your new favorite pairs.</p>
                 <div class='flex shrink gap-4 pt-2 pb-2'>
                     <span class='font-bold p-2 cursor-pointer sm:text-sm'> Shop Now  </span>
                 </div>
             </div>
 
 
-            <ul class='pl-2 grid grid-cols-4 3xl:grid-cols-4  gap-0 lg:grid-cols-3 sxs:grid-cols-2 sxs:gap-0 li:grid-cols-1 li:p-2 li:grid-cols-0 li:w-4/5 li:mx-auto li:my-auto ' >
+            <ul class='pl-2 grid grid-cols-4 3xl:grid-cols-4  gap-0 lg:grid-cols-3 sxs:grid-cols-2 sxs:gap-0 li:grid-cols-1 li:p-2 li:grid-cols-2 li:gap-3 li:w-full li:p-1 ' >
 
                 <div [routerLink]="['/product/details/', Shirt?.id]" *ngFor="let Shirt of Shirt" data-aos="zoom-in">
                     <div class="proCard">
@@ -28,7 +24,7 @@
                         </div>
                         <div class="info">
                             <h4 class="title truncate text-md text-lighter ">{{Shirt?.name}}</h4>
-                            <div class="price font-bold text-2xl ">N {{Shirt?.price}}</div>
+                            <div class="price font-bold text-lg ">N {{Shirt?.price}}</div>
                         </div>
                     </div>
                 </div>

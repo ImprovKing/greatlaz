@@ -15,7 +15,6 @@ body {
 .proCard{
   width: 250px ;
   height: 350px ;
-  border-radius: 10px ;
 }
 .imgHolder{
   width: 100% !important ;
@@ -28,10 +27,9 @@ body {
   height: 100% ;
   object-fit: cover ;
   object-position: top center ;
-  border-radius : 10px ;
 }
 .info{
-  text-align: center ;
+  text-align: left ;
   padding : 10px ;
 }
 .title{
@@ -68,6 +66,14 @@ align-items: center;       /* responsible for aligning the contents inside the c
     width: 300px;
   }
 }
+@media screen and (max-width : 450px ) {
+  .proCard{
+    width: 175px;
+  }
+  .proCard img{
+    object-fit: auto auto ;
+  }
+}
 @media screen and (max-width : 999px) {
 
   #prod-container{
@@ -84,9 +90,8 @@ align-items: center;       /* responsible for aligning the contents inside the c
   height: 100vh ;
 }
 #prod-container{
-  width: 84% ;
+  width: 100% ;
   height: auto ;  
-  margin-left: 16% ;
 }
 
 
