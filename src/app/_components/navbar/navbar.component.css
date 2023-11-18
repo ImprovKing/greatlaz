@@ -40,7 +40,7 @@ body{
     z-index: 99;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
-    background:#0e212b;
+    background:#000;
     box-shadow : 1px 1px 3px #141414 , -1px -1px 2px #141414 ;
     overflow-y: scroll;
     display: block;
@@ -110,10 +110,9 @@ input[type=checkbox] {
     transition: all 0.3s;
     box-sizing: border-box;
     position: absolute;
-    border-radius : 10px ;
-    height: 4px;
+    height: 3px;
     width: 100%;
-    background-color: #3894c6;
+    background-color: #000;
 }
 .horizontal {
     transition: all 0.3s;

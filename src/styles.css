@@ -83,12 +83,6 @@ align-items: center;       /* responsible for aligning the contents inside the c
   
 }
 
-/* Side Bar */
-
-#sideBar{
-  width: 100% ;
-  height: 100vh ;
-}
 #prod-container{
   width: 100% ;
   height: auto ;  
